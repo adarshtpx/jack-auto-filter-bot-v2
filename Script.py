@@ -15,12 +15,67 @@ class script(object):
     START_TXT = environ.get("START_TXT", "Please Set Welcome Message To View This")
     HELP_TXT = """<b>Hey {}
 Here is the Help For My Commands</b>"""
+    ONE_TXT = """<b>Hey {}
+Here is the Help For My Commands</b>"""
+    TWO_TXT = """<b>Hey {}
+Here is the Help For My Commands</b>"""
+    BIO_TXT = """ My Name: {}
+Creator: <a href=https://t.me/kkhanyaseen>Yaseen</a>
+Library: Pyrogram 
+Language : Python"""
     ABOUT_TXT = """ My Name: {}
 Creator: <a href=https://t.me/kkhanyaseen>Yaseen</a>
 Library: Pyrogram 
 Language : Python"""
     SOURCE_TXT =  """<b>NOTE:</b>
 - 👊👊👊👊👊"""
+    DONATION_TXT = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
+›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
+⪼ <b>𝐘𝐨𝐮 𝐂𝐚𝐧 𝐃𝐨𝐧𝐚𝐭𝐞 𝐀𝐧𝐲 𝐀𝐦𝐨𝐮𝐧𝐭 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 💳. 
+<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
+✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
+✮ 𝗣𝗮𝘆𝘁𝗺
+✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
+✮ 𝗣𝗮𝘆𝗣𝗮𝗹
+_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
+━━━━━━━━━━━━᚜ <a href=https://t.me/AboutAadhi><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━
+›› <b>𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b>
+⪼ <b>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 . 
+<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
+✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
+✮ 𝗣𝗮𝘆𝘁𝗺
+✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
+✮ 𝗣𝗮𝘆𝗣𝗮𝗹
+_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐀𝐧𝐝 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
+━━━━━━━━━━━━᚜ <a href=https://t.me/AboutAadhi><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━"""
+    PROMOTION_TXT = """<b>〄 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧 〄</b>
+⪼ <b>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 . 
+<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
+✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
+✮ 𝗣𝗮𝘆𝘁𝗺
+✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
+✮ 𝗣𝗮𝘆𝗣𝗮𝗹
+_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐀𝐧𝐝 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
+━━━━━━━━━━━━᚜ <a href=https://t.me/AboutAadhi><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━""" 
+    FILE_TXT = """<b>Commands and Usage.</b>
+/autofilter on - Enable auto filter.
+/autofilter off - Disable auto filter.
+/set_template - Set custom ɪᴍᴅʙ template."""
+    WHOIS_TXT ="""<b>Commands and Usage</b>
+/whois - For user details"""
+    FUN_TXT ="""<b>Games</b> 
+    
+𝟣. /dice - Role The Dice
+𝟤. /Throw 𝗈𝗋 /Dart - To Make Dart 
+3. /Runs - Some Random Dialogues
+4. /Goal or /Shoot - To Make a Goal or Shoot
+5. /luck or /cownd - Spin And Try Your Luck"""
+    DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..? 
+  
+<b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
+<b>𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙷𝙴 𝙰𝙹𝙰𝚇-𝙿𝚁𝙾-𝙼𝙰𝚇 𝚁𝙴𝙿𝙾 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 <a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a></b>
+<b>𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b>
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and I will respond whenever a keyword is found the message
@@ -35,6 +90,41 @@ Language : Python"""
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+    SONG_TXT = """<b>Commands and Usage.</b>
+</song Song Name>
+📌 ᴡᴏʀᴋs ᴏɴʟʏ ᴏɴ ɢʀᴏᴜᴘs."""
+    PIN_TXT ="""<b>Commands and Usage.</b>
+/pin - To Pin The Message On Your Chat.
+/unpin - To Unpin The Current Pinned Message."""
+    PASTE_TXT = """<b>Commands and Usage.</b>
+/paste [text] - paste the given text on Pasty
+<b>NOTE:</b>
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+    TTS_TXT = """<b>Commands and Usage.</b>
+/tts <text> : convert text to speech
+<b>NOTE:</b>
+• These commands works on both pm and group.
+• IMDb can translate texts to 200+ languages."""
+    PINGS_TXT ="""<b>Usage.</b>
+/ping - To get your ping."""
+    TELE_TXT = """<b>Commands and Usage.</b>
+/telegraph - Send me Picture or Video Under (5MB)
+<b>NOTE:</b>
+This Command Is Available in goups and pms.
+This Command Can be used by everyone."""
+
+    PRIVATEBOT_TXT = """Hey {} I'm Alive."""
+
+    JSON_TXT ="""<b>JSON:</b>
+Bot returns json for all replied messages with /json
+<b>Features:</b>
+Message Editting JSON.
+Pm Support.
+Group Support."""
+    PURGE_TXT = """<b>Usage.</b>
+   
+/purge :- Delete All Messages From The Replied To Message, To The Current Message"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - I Support both url and alert inline buttons.
@@ -109,4 +199,81 @@ Added By - {}
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}
+"""
+REPORT_TXT = """<b>Usage.</b>
+/report 𝗈𝗋 @admins """
+
+    CORONA_TXT = """/covid - Use This Command To know Covid informations.
+Example:
+<code>/covid India</code>"""
+
+    URLSHORT_TXT = """This Command will Help You To short a Link.
+<b>Usage: /short <link>
+Example:
+<code>/short https://t.me/ddrabit</code>"""
+
+    VIDEO_TXT ="""<b>Youtube Video Downloader.</b>
+<b>Usage:</b>
+Type: /video <link>
+Type: /mp4 <link>"""
+
+    ZOMBIES_TXT = """<b>Kick incative members from group. Add me as admin with ban users permission in group.</b>
+<b>Commands and Usage.</b>
+• /inkick - command with required arguments and i will kick members from group.
+• /instatus - to check current status of chat member from group.
+• /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.
+• /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
+• /dkick - to kick deleted accounts."""
+
+    IMAGE_TXT = """<b>Commands and Usage.</b>
+• /imdb  - get the film information from IMDb source.
+• /search  - get the film information from various sources."""
+
+    STICKER_TXT = """<b>Usage.</b>
+/stickerid - Reply to any sticker for sticker id."""
+
+    YTTHUMB_TXT = """<b>Youtube Video Thumbnail Downloader.</b>
+Usage: /ytthumb <video link>
+Example: /ytthumb https://youtu.be/UyzJ9KEoU0w"""
+
+    ABOOK_TXT = """<b>You can convert a pdf file to a audio file with this command.</b>
+<b>Commands and Usage.</b>
+/audiobook - <b>Reply to PDF file to generate the audio.</b>"""
+
+    GTRANS_TXT = """<b>Help: Gᴏᴏɢʟᴇ Tʀᴀɴsʟᴀᴛᴏʀ
+Tʀᴀɴsʟᴀᴛᴇ ᴛᴇxᴛs ᴛᴏ ᴀ sᴘᴇᴄɪғɪᴄ ʟᴀɴɢᴜᴀɢᴇ!
+Cᴏᴍᴍᴀɴᴅs ᴀɴᴅ Usᴀɢᴇ: /tr [lang Code][reply] - ᴛʀᴀɴsʟᴀᴛᴇ ʀᴇᴘʟɪᴇᴅ ᴍᴇssᴀɢᴇ ᴛᴏ sᴘᴇᴄɪғɪᴄ ʟᴀɴɢᴜᴀɢᴇ.
+NOTE:
+While Using /tr you should specify the language code.
+Example:
+• en = english
+• ml = malayalam
+• hi = hindi
+Type: /tr ml
+For More Language Codes Click Here 👇</b>"""
+
+    RESTRIC_TXT = """Some people need to be publicly banned; spammers, annoyances, or just trolls.
+This module allows you to do that easily, by exposing some common actions, so everyone will see!
+<b>Commands and Usage.</b>
+/ban - Ban a user.
+/unban - To unban a user.
+/tban - Temporarily ban a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks.
+/mute - To mute a user.
+/unmute - To unmute a user.
+/tmute - Temporarily mute a user. Example time values: 4m = 4 minutes, 3h = 3 hours, 6d = 6 days, 5w = 5 weeks"""
+    CREATOR_REQUIRED = """<b>You have To Be The Group Owner To Do That.</b>"""
+      
+    INPUT_REQUIRED = "**Arguments Required.**"
+      
+    KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Provided."""
+      
+    START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
+      
+    ADMIN_REQUIRED = """<b>Im Not Admin Here. Add Me Again with all admin rights.</b>"""
+      
+    DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
+      
+    FETCHING_INFO = """<b>Fetching User info...</b>"""
+      
+    STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
 """
