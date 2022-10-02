@@ -200,11 +200,9 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-REPORT_TXT = """<b>Usage.</b>
+    REPORT_TXT = """<b>Usage.</b>
 /report 𝗈𝗋 @admins """
 
-    CORONA_TXT = """<b>Usage.</b>
-report 𝗈𝗋 @admins """
 
     URLSHORT_TXT = """This Command will Help You To short a Link.
 <b>Usage: /short <link>
