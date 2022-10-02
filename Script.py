@@ -203,7 +203,7 @@ Name - {}
 REPORT_TXT = """<b>Usage.</b>
 /report 𝗈𝗋 @admins """
 
-    CORONA_TXT = ""
+    CORONA_TXT = """LOL"""
 
     URLSHORT_TXT = """This Command will Help You To short a Link.
 <b>Usage: /short <link>
