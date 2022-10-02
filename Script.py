@@ -203,9 +203,7 @@ Name - {}
 REPORT_TXT = """<b>Usage.</b>
 /report 𝗈𝗋 @admins """
 
-    CORONA_TXT = """/covid - Use This Command To know Covid informations.
-Example:
-<code>/covid India</code>"""
+    CORONA_TXT = ""
 
     URLSHORT_TXT = """This Command will Help You To short a Link.
 <b>Usage: /short <link>
